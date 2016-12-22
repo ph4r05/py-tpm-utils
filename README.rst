@@ -16,6 +16,7 @@ Dependencies
 
 * Debian / Ubuntu
 .. code-block:: bash
+
     sudo apt-get install tpm-tools libtspi-dev libopencryptoki-dev libssl-dev
 
 * Redhat / Fedora
