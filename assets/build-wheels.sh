@@ -11,6 +11,7 @@ find /io/
 for PYBIN in /opt/python/*/bin; do
     "${PYBIN}/pip" install -r /io/dev-requirements.txt
     "${PYBIN}/pip" wheel /io/ -w wheelhouse/
+    "${PYBIN}/pip" wheel pytss -w wheelhouse/
 done
 
 pwd
