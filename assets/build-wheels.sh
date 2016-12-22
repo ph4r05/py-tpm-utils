@@ -2,7 +2,7 @@
 set -e -x
 
 # Install a system package required by our library
-yum install -y tpm-tools opencryptoki-devel trousers-devel openssl-devel python-pip python-devel
+yum install -y tpm-tools opencryptoki-devel openCryptoki-devel trousers-devel openssl-devel python-pip python-devel
 
 # Compile wheels
 for PYBIN in /opt/python/*/bin; do
