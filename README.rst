@@ -17,12 +17,12 @@ Dependencies
 * Debian / Ubuntu
 .. code-block:: bash
 
-    sudo apt-get install tpm-tools libtspi-dev libopencryptoki-dev libssl-dev
+    sudo apt-get install tpm-tools libtspi-dev libopencryptoki-dev libssl-dev python-pip python-dev build-essential
 
 * Redhat / Fedora
 .. code-block:: bash
 
-    sudo yum install tpm-tools opencryptoki-devel trousers-devel openssl-devel
+    sudo yum install tpm-tools opencryptoki-devel trousers-devel openssl-devel python-pip python-devel
 
 ======
 Usage
