@@ -25,7 +25,7 @@ ls -las wheelhouse/
 
 # Bundle external shared libraries into the wheels
 for whl in wheelhouse/*.whl; do
-    if [[ $whl == *"-none-any.hwl" ]]; then
+    if [[ "$whl" == *"-none-any.whl" ]]; then
         continue
     fi
 
