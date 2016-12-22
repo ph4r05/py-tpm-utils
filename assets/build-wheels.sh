@@ -14,6 +14,7 @@ ls -las wheelhouse/
 rm -rf wheelhouse/argparse-*whl
 rm -rf wheelhouse/six-*whl
 rm -rf wheelhouse/pycparser-*.whl
+rm -rf wheelhouse/funcsigs-*.whl
 
 # Bundle external shared libraries into the wheels
 for whl in wheelhouse/*.whl; do
@@ -24,6 +25,6 @@ ls -las wheelhouse/
 
 # Install packages and test
 for PYBIN in /opt/python/*/bin/; do
-    "${PYBIN}/pip" install python-manylinux-demo --no-index -f /io/wheelhouse
+    "${PYBIN}/pip" install pytpmutils --no-index -f /io/wheelhouse
     # (cd "$HOME"; "${PYBIN}/nosetests" pymanylinuxdemo)
 done
