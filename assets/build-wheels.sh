@@ -9,6 +9,8 @@ find /io/
 
 # Compile wheels
 for PYBIN in /opt/python/*/bin; do
+    "${PYBIN}/pip" install --upgrade pip wheel
+    "${PYBIN}/pip" install --upgrade -r /io/dev-requirements.txt
     "${PYBIN}/pip" install -r /io/dev-requirements.txt
     "${PYBIN}/pip" wheel /io/ -w wheelhouse/
     "${PYBIN}/pip" wheel pytss -w wheelhouse/
@@ -16,14 +18,6 @@ done
 
 pwd
 ls -las wheelhouse/
-#rm -rf wheelhouse/argparse-*whl
-#rm -rf wheelhouse/six-*whl
-#rm -rf wheelhouse/pycparser-*.whl
-#rm -rf wheelhouse/funcsigs-*.whl
-#rm -rf wheelhouse/mock-*.whl
-#rm -rf wheelhouse/pbr-*.whl
-#rm -rf wheelhouse/*-none-any.whl
-#ls -las wheelhouse/
 
 # Bundle external shared libraries into the wheels
 for whl in wheelhouse/*.whl; do
