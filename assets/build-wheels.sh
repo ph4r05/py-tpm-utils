@@ -17,6 +17,7 @@ rm -rf wheelhouse/pycparser-*.whl
 rm -rf wheelhouse/funcsigs-*.whl
 rm -rf wheelhouse/mock-*.whl
 rm -rf wheelhouse/pbr-*.whl
+rm -rf wheelhouse/*-none-any.whl
 ls -las wheelhouse/
 
 # Bundle external shared libraries into the wheels
