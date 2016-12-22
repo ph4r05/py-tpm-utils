@@ -10,10 +10,14 @@ for PYBIN in /opt/python/*/bin; do
     "${PYBIN}/pip" wheel /io/ -w wheelhouse/
 done
 
+ls -las wheelhouse/
+
 # Bundle external shared libraries into the wheels
 for whl in wheelhouse/*.whl; do
     auditwheel repair "$whl" -w /io/wheelhouse/
 done
+
+ls -las wheelhouse/
 
 # Install packages and test
 for PYBIN in /opt/python/*/bin/; do
