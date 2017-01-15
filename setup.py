@@ -3,7 +3,7 @@ import sys
 from setuptools import setup
 from setuptools import find_packages
 
-version = '0.1.0'
+version = '0.1.2'
 
 # Please update tox.ini when modifying dependency version requirements
 install_requires = [
@@ -38,10 +38,11 @@ setup(
     name='pytpmutils',
     version=version,
     description='Basic TPM python utils for Linux',
-    url='https://deadcode.me',
+    url='https://github.com/ph4r05/py-tpm-utils',
     author='Dusan Klinec (ph4r05)',
     author_email='dusan.klinec@gmail.com',
-    license='Apache2',
+    license=open('LICENSE').read(),
+    long_description=open('README.rst').read(),
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
